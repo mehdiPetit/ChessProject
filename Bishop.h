@@ -21,7 +21,7 @@ public:
   /**
    * Empty Constructor
    */
-  Bishop ();
+  Bishop (Coordinate coordinate);
 
   /**
    * Empty Destructor

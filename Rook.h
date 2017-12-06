@@ -21,7 +21,7 @@ public:
   /**
    * Empty Constructor
    */
-  Rook ();
+  Rook (Coordinate coordinate);
 
   /**
    * Empty Destructor

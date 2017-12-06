@@ -22,7 +22,7 @@ public:
    * Empty Constructor
    */
   Piece (unsigned int var_temp);
-
+  Piece (unsigned int var_temp, Coordinate coordinate);
   /**
    * Empty Destructor
    */
@@ -52,6 +52,7 @@ protected:
   //  
 
   unsigned int value;
+  Coordinate coordinate;
 public:
 
 
@@ -102,7 +103,7 @@ private:
   // Private attributes
   //  
 
-  Coordinate coordinate;
+
 public:
 
 

@@ -3,7 +3,7 @@
 // Constructors/Destructors
 //  
 
-King::King () :Piece(0){
+King::King (Coordinate coordinate) :Piece(0, coordinate){
 }
 bool King:: move (Board board, Coordinate coordinate){}
 King::~King () { }

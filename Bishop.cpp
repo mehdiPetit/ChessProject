@@ -3,7 +3,8 @@
 // Constructors/Destructors
 //  
 
-Bishop::Bishop():Piece(3) {
+Bishop::Bishop(Coordinate coordinate):Piece(3, coordinate) {
+
 }
 
 bool Bishop::move(Board board, Coordinate coordinate){}

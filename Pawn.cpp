@@ -3,7 +3,7 @@
 // Constructors/Destructors
 //  
 
-Pawn::Pawn ():Piece(1) {
+Pawn::Pawn (Coordinate coordinate):Piece(1, coordinate) {
 }
 bool Pawn:: move (Board board, Coordinate coordinate){}
 Pawn::~Pawn () { }

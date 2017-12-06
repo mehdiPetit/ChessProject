@@ -3,7 +3,7 @@
 // Constructors/Destructors
 //  
 
-Knight::Knight () :Piece(3){
+Knight::Knight (Coordinate coordinate) :Piece(3, coordinate){
 }
 bool Knight:: move (Board board, Coordinate coordinate){}
 Knight::~Knight () { }

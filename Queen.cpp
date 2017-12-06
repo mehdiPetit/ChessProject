@@ -3,7 +3,7 @@
 // Constructors/Destructors
 //  
 
-Queen::Queen () :Piece(9){
+Queen::Queen (Coordinate coordinate) :Piece(9, coordinate){
 }
 bool Queen:: move (Board board, Coordinate coordinate){}
 Queen::~Queen () { }

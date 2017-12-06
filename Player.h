@@ -3,8 +3,15 @@
 #define PLAYER_H
 
 #include <string>
-#include<list>
-#include"Piece.h"
+#include <list>
+#include "Piece.h"
+#include "Rook.h"
+#include "Knight.h"
+#include "Bishop.h"
+#include "Queen.h"
+#include "King.h"
+#include "Pawn.h"
+
 /**
   * class Player
   * 
@@ -21,7 +28,7 @@ public:
   /**
    * Empty Constructor
    */
-  Player ();
+  Player (std::string color_temp);
 
   /**
    * Empty Destructor
@@ -52,6 +59,7 @@ protected:
   //  
 
   std::list<Piece*> pieces;
+  std::string color;
 public:
 
 

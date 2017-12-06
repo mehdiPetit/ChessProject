@@ -21,7 +21,7 @@ public:
   /**
    * Empty Constructor
    */
-  King ();
+  King (Coordinate coordinate);
 
   /**
    * Empty Destructor

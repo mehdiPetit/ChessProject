@@ -21,7 +21,7 @@ public:
   /**
    * Empty Constructor
    */
-  Pawn ();
+  Pawn (Coordinate coordinate);
 
   /**
    * Empty Destructor

@@ -3,7 +3,7 @@
 // Constructors/Destructors
 //  
 
-Rook::Rook () :Piece(5){
+Rook::Rook (Coordinate coordinate) :Piece(5, coordinate){
 }
 bool Rook:: move (Board board, Coordinate coordinate){}
 
