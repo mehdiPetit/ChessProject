@@ -3,13 +3,11 @@
 #define PIECE_H
 
 #include <string>
-#include "Board.h"
 #include "Coordinate.h"
 /**
   * class Piece
   * 
   */
-
 class Piece
 {
 public:
@@ -17,6 +15,7 @@ public:
   // Constructors/Destructors
   //  
 
+    virtual std::string toString() = 0;
 
   /**
    * Empty Constructor
@@ -92,8 +91,7 @@ protected:
    * @param  board
    * @param  coordinate
    */
-  virtual bool move (Board board, Coordinate coordinate)=0;
-
+  virtual bool move ( Coordinate coordinate)=0;
 
 private:
 

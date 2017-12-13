@@ -5,7 +5,7 @@
 
 Knight::Knight (Coordinate coordinate) :Piece(3, coordinate){
 }
-bool Knight:: move (Board board, Coordinate coordinate){}
+bool Knight:: move ( Coordinate coordinate){}
 Knight::~Knight () { }
 
 //  

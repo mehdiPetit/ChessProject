@@ -17,7 +17,9 @@ public:
   // Constructors/Destructors
   //  
 
-
+    virtual std::string toString(){
+        return "Rook :" + std::to_string(coordinate.getX()) + " - " + std::to_string(coordinate.getY()) ;
+    }
   /**
    * Empty Constructor
    */
@@ -44,7 +46,7 @@ public:
 
 
 protected:
-  virtual bool move (Board board, Coordinate coordinate);
+  virtual bool move (Coordinate coordinate);
   // Static Protected attributes
   //  
 

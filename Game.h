@@ -4,6 +4,7 @@
 
 #include <string>
 #include "Board.h"
+#include "Player.h"
 /**
   * class Game
   * 
@@ -51,6 +52,8 @@ protected:
   //  
 
 Board *board;
+Player *player_1;
+Player *player_2;
 public:
 
 
@@ -109,7 +112,6 @@ public:
 private:
 
 
-  void initAttributes () ;
 
 };
 

@@ -17,7 +17,9 @@ public:
   // Constructors/Destructors
   //  
 
-
+    virtual std::string toString(){
+        return "Queen :" + std::to_string(coordinate.getX()) + " - " + std::to_string(coordinate.getY()) ;
+    }
   /**
    * Empty Constructor
    */
@@ -50,7 +52,7 @@ protected:
 
   // Protected attributes
   //  
-     virtual bool move (Board board, Coordinate coordinate);
+     virtual bool move (Coordinate coordinate);
 public:
 
 

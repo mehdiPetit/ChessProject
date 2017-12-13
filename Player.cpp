@@ -2,7 +2,7 @@
 
 // Constructors/Destructors
 //  
-
+Player::Player(){}
 Player::Player (std::string color) {
 
     unsigned int ligne_1, ligne_2;
@@ -14,8 +14,8 @@ Player::Player (std::string color) {
     }
     else
     {
-        ligne_1 = 8;
-        ligne_2 = 7;
+        ligne_1 = 7;
+        ligne_2 = 6;
     }
         pieces.push_front(new Rook(Coordinate(0,ligne_1)));
         pieces.push_front(new Rook(Coordinate(7,ligne_1)));

@@ -5,7 +5,7 @@
 
 Pawn::Pawn (Coordinate coordinate):Piece(1, coordinate) {
 }
-bool Pawn:: move (Board board, Coordinate coordinate){}
+bool Pawn:: move (Coordinate coordinate){}
 Pawn::~Pawn () { }
 
 //  

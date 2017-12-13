@@ -4,7 +4,7 @@
 //  
 
 Case::Case () {
-initAttributes();
+    piece =NULL;
 }
 
 Case::~Case () { }

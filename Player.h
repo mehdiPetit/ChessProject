@@ -28,6 +28,8 @@ public:
   /**
    * Empty Constructor
    */
+  Player ();
+
   Player (std::string color_temp);
 
   /**
@@ -87,7 +89,7 @@ public:
    * Get the value of pieces
    * @return the value of pieces
    */
-  std::list<Piece*> getPieces ()   {
+  std::list<Piece*>& getPieces ()   {
     return pieces;
   }
 protected:

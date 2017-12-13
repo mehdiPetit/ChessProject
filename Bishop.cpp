@@ -7,7 +7,7 @@ Bishop::Bishop(Coordinate coordinate):Piece(3, coordinate) {
 
 }
 
-bool Bishop::move(Board board, Coordinate coordinate){}
+bool Bishop::move(Coordinate coordinate){}
 
 Bishop::~Bishop () { }
 

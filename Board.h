@@ -4,6 +4,7 @@
 
 #include <string>
 #include "Case.h"
+#include "Player.h"
 
 
 /**
@@ -22,7 +23,7 @@ public:
   /**
    * Empty Constructor
    */
-  Board ();
+  Board (Player *player_1, Player *player_2);
 
   /**
    * Empty Destructor
@@ -108,7 +109,6 @@ public:
 private:
 
 
-  void initAttributes () ;
 
 };
 

@@ -5,7 +5,7 @@
 
 King::King (Coordinate coordinate) :Piece(0, coordinate){
 }
-bool King:: move (Board board, Coordinate coordinate){}
+bool King:: move ( Coordinate coordinate){}
 King::~King () { }
 
 //  

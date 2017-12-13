@@ -22,7 +22,9 @@ public:
    * Empty Constructor
    */
   Bishop (Coordinate coordinate);
-
+  virtual std::string toString(){
+      return "Bishop :" + std::to_string(coordinate.getX()) + " - " + std::to_string(coordinate.getY()) ;
+  }
   /**
    * Empty Destructor
    */
@@ -50,7 +52,7 @@ protected:
 
   // Protected attributes
   //  
-     virtual bool move (Board board, Coordinate coordinate);
+     virtual bool move (Coordinate coordinate);
 public:
 
 
