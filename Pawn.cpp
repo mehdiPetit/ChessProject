@@ -14,8 +14,8 @@ bool Pawn:: move (Coordinate t_coordinate, Board* board){
     {
         this->setCoordinate(t_coordinate);
         isMoveAllowed = true;
+        isFirstMoove = false;
     }
-    isFirstMoove = false;
     return isMoveAllowed;
 }
 
@@ -31,9 +31,9 @@ bool Pawn::eat(Coordinate t_coordinate, Board* board){
     {
         this->setCoordinate(t_coordinate);
         isMoveAllowed = true;
+        isFirstMoove = false;
 
     }
-    isFirstMoove = false;
     return isMoveAllowed;
 }
 Pawn::~Pawn () { }

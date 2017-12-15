@@ -9,12 +9,12 @@ bool Rook::eat(Coordinate coordinate, Board* board){
     return move(coordinate, board);
 }
 bool Rook:: move ( Coordinate t_coordinate , Board* board){
-    bool isMoveAllowed = true;
+    bool isMoveAllowed = false;
 
     if( (coordinate.getX() == t_coordinate.getX()  &&   coordinate.getY() != t_coordinate.getY())
             ||(coordinate.getX() != t_coordinate.getX()  &&   coordinate.getY() == t_coordinate.getY()))
     {
-
+        isMoveAllowed = true;
         if (coordinate.getX() != t_coordinate.getX()  &&   coordinate.getY() == t_coordinate.getY())
         {
 

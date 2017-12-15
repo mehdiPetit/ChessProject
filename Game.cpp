@@ -52,7 +52,9 @@ bool Game::play(){
                 if(!isPlayerOwner)
                 {
                     std::cerr << "This case doesn't belong to you !!!!" << std::endl;
+
                 }
+
             }while(!isPlayerOwner);
 
             do{
@@ -63,6 +65,7 @@ bool Game::play(){
                 if(isPlayerOwner)
                 {
                     std::cerr << "This case is already used by one of your piece !!!!" << std::endl;
+
                 }
             }while(isPlayerOwner);
             if(board->getBoard()[finalCoordinate.getY()][finalCoordinate.getX()].getPiece() != NULL)
@@ -78,6 +81,7 @@ bool Game::play(){
             if(!isMoveAllowed)
             {
                 std::cerr << "This move is not allowed !!!!" << std::endl;
+
             }
         }while(!isMoveAllowed);
 
