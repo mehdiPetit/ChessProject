@@ -4,10 +4,14 @@
 
 #include <string>
 #include "Coordinate.h"
+#include <stdlib.h>     /* abs */// Constructors/Destructors
+#include "Board.h"
+
 /**
   * class Piece
   * 
   */
+class Board;
 class Piece
 {
 public:
@@ -66,8 +70,8 @@ public:
   // Protected attribute accessor methods
   //  
 
-  virtual bool move ( Coordinate t_coordinate)=0;
-  virtual bool eat ( Coordinate t_coordinate)=0;
+  virtual bool move ( Coordinate t_coordinate, Board *board)=0;
+  virtual bool eat ( Coordinate t_coordinate, Board *board)=0;
 
   /**
    * Set the value of value

@@ -4,14 +4,13 @@
 
 #include <string>
 #include "Case.h"
-#include "Player.h"
 
 
 /**
   * class Board
   * 
   */
-
+class Player;
 class Board
 {
 public:

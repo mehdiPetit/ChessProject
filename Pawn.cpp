@@ -1,16 +1,14 @@
 #include "Pawn.h"
-#include <stdlib.h>     /* abs */// Constructors/Destructors
 //  
 
 Pawn::Pawn (Coordinate coordinate):Piece(1, coordinate), isFirstMoove(true) {
 }
-bool Pawn:: move (Coordinate t_coordinate){
+bool Pawn:: move (Coordinate t_coordinate, Board* board){
     bool isMoveAllowed = false;
     if(
             (
                 abs(coordinate.getX() - t_coordinate.getX()) == 0 &&
                 ((abs(coordinate.getY() - t_coordinate.getY()) == 1) ||(abs(coordinate.getY() - t_coordinate.getY()) == 2 && isFirstMoove))
-                /* et que dans t_coordinate il y a un ennemi*/
              )
     )
     {
@@ -21,7 +19,7 @@ bool Pawn:: move (Coordinate t_coordinate){
     return isMoveAllowed;
 }
 
-bool Pawn::eat(Coordinate t_coordinate){
+bool Pawn::eat(Coordinate t_coordinate, Board* board){
 
 
 

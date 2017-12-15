@@ -67,12 +67,13 @@ bool Game::play(){
             }while(isPlayerOwner);
             if(board->getBoard()[finalCoordinate.getY()][finalCoordinate.getX()].getPiece() != NULL)
             {
-                isMoveAllowed = caseDepart->getPiece()->eat(finalCoordinate);
-                std::cout << "Bool: " << isMoveAllowed;
+                isMoveAllowed = caseDepart->getPiece()->eat(finalCoordinate, board);
+                if(isMoveAllowed)
+                    passivePlayer->getPieces().remove(board->getBoard()[finalCoordinate.getY()][finalCoordinate.getX()].getPiece());
             }
             else
             {
-                isMoveAllowed = caseDepart->getPiece()->move(finalCoordinate);
+                isMoveAllowed = caseDepart->getPiece()->move(finalCoordinate, board);
             }
             if(!isMoveAllowed)
             {

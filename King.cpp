@@ -5,9 +5,9 @@
 
 King::King (Coordinate coordinate) :Piece(0, coordinate){
 }
-bool King:: move ( Coordinate coordinate){}
-bool King::eat(Coordinate coordinate){
-    return move(coordinate);
+bool King:: move ( Coordinate coordinate, Board* board){}
+bool King::eat(Coordinate coordinate, Board* board){
+    return move(coordinate, board);
 }
 King::~King () { }
 

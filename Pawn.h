@@ -46,9 +46,9 @@ public:
 
 
 protected:
-    virtual bool eat (Coordinate coordinate);
+    virtual bool move (Coordinate coordinate, Board* board);
+    virtual bool eat (Coordinate coordinate, Board* board);
 
-    virtual bool move ( Coordinate t_coordinate);
     // Static Protected attributes
     //
 
