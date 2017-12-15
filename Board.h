@@ -23,7 +23,9 @@ public:
   /**
    * Empty Constructor
    */
-  Board (Player *player_1, Player *player_2);
+  Board ();
+  void refresh(Player *player_1, Player *player_2);
+  void print();
 
   /**
    * Empty Destructor
@@ -103,9 +105,11 @@ public:
    * Get the value of board
    * @return the value of board
    */
-  Case** getBoard ()   {
+  Case** getBoard (){
     return board;
   }
+
+
 private:
 
 

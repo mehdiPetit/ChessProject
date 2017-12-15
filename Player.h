@@ -31,6 +31,7 @@ public:
   Player ();
 
   Player (std::string color_temp);
+  bool isPieceOwner(Piece *piece);
 
   /**
    * Empty Destructor

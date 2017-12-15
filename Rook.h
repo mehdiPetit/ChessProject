@@ -18,7 +18,7 @@ public:
   //  
 
     virtual std::string toString(){
-        return "Rook :" + std::to_string(coordinate.getX()) + " - " + std::to_string(coordinate.getY()) ;
+        return "R";
     }
   /**
    * Empty Constructor
@@ -46,6 +46,8 @@ public:
 
 
 protected:
+  virtual bool eat (Coordinate coordinate);
+
   virtual bool move (Coordinate coordinate);
   // Static Protected attributes
   //  

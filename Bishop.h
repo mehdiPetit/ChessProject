@@ -23,7 +23,7 @@ public:
    */
   Bishop (Coordinate coordinate);
   virtual std::string toString(){
-      return "Bishop :" + std::to_string(coordinate.getX()) + " - " + std::to_string(coordinate.getY()) ;
+      return "B";
   }
   /**
    * Empty Destructor
@@ -53,6 +53,8 @@ protected:
   // Protected attributes
   //  
      virtual bool move (Coordinate coordinate);
+     virtual bool eat (Coordinate coordinate);
+
 public:
 
 

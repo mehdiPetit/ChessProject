@@ -7,90 +7,92 @@
 
 /**
   * class Knight
-  * 
+  *
   */
 
 class Knight : virtual public Piece
 {
 public:
 
-  // Constructors/Destructors
-  //  
+    // Constructors/Destructors
+    //
     virtual std::string toString(){
-        return "Knight :" + std::to_string(coordinate.getX()) + " - " + std::to_string(coordinate.getY()) ;
+        return "k" ;
     }
 
-  /**
+    /**
    * Empty Constructor
    */
-  Knight (Coordinate coordinate);
+    Knight (Coordinate coordinate);
 
-  /**
+    /**
    * Empty Destructor
    */
-  virtual ~Knight ();
+    virtual ~Knight ();
 
-  // Static Public attributes
-  //  
+    // Static Public attributes
+    //
 
-  // Public attributes
-  //  
-
-
-  // Public attribute accessor methods
-  //  
+    // Public attributes
+    //
 
 
-  // Public attribute accessor methods
-  //  
+    // Public attribute accessor methods
+    //
+
+
+    // Public attribute accessor methods
+    //
 
 
 protected:
 
-  // Static Protected attributes
-  //  
+    // Static Protected attributes
+    //
 
-  // Protected attributes
-  //  
-     virtual bool move ( Coordinate coordinate);
+    // Protected attributes
+    //
+    virtual bool eat (Coordinate coordinate);
+
+    virtual bool move ( Coordinate coordinate);
 public:
 
 
-  // Protected attribute accessor methods
-  //  
+    // Protected attribute accessor methods
+    //
 
 protected:
 
 public:
 
 
-  // Protected attribute accessor methods
-  //  
+    // Protected attribute accessor methods
+    //
 
 protected:
 
 
 private:
 
-  // Static Private attributes
-  //  
+    // Static Private attributes
+    //
 
-  // Private attributes
-  //  
+    // Private attributes
+    //
 
 public:
 
 
-  // Private attribute accessor methods
-  //  
+    // Private attribute accessor methods
+    //
 
 private:
 
 public:
 
 
-  // Private attribute accessor methods
-  //  
+    // Private attribute accessor methods
+    //
 
 private:
 

@@ -3,7 +3,7 @@
 #define COORDINATE_H
 
 #include <string>
-
+#include <iostream>
 /**
   * class Coordinate
   * 
@@ -22,7 +22,7 @@ public:
    */
   Coordinate();
   Coordinate (unsigned int t_x, unsigned int t_y);
-
+  void read();
   /**
    * Empty Destructor
    */

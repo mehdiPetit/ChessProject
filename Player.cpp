@@ -32,6 +32,16 @@ Player::Player (std::string color) {
         }
 }
 
+bool Player::isPieceOwner(Piece *piece){
+    bool isPieceFound = false;
+    for( std::list<Piece*>::iterator it = pieces.begin(); it != pieces.end(); it++)
+    {
+        if( piece == *it )
+            isPieceFound = true;
+    }
+    return isPieceFound;
+}
+
 Player::~Player () { }
 
 //  

@@ -5,6 +5,7 @@
 #include <string>
 #include "Board.h"
 #include "Player.h"
+#include <iostream>
 /**
   * class Game
   * 
@@ -22,7 +23,7 @@ public:
    * Empty Constructor
    */
   Game ();
-
+  bool play();
   /**
    * Empty Destructor
    */

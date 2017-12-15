@@ -66,6 +66,8 @@ public:
   // Protected attribute accessor methods
   //  
 
+  virtual bool move ( Coordinate t_coordinate)=0;
+  virtual bool eat ( Coordinate t_coordinate)=0;
 
   /**
    * Set the value of value
@@ -91,7 +93,6 @@ protected:
    * @param  board
    * @param  coordinate
    */
-  virtual bool move ( Coordinate coordinate)=0;
 
 private:
 

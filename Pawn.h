@@ -7,90 +7,94 @@
 
 /**
   * class Pawn
-  * 
+  *
   */
 
 class Pawn : virtual public Piece
 {
 public:
 
-  // Constructors/Destructors
-  //  
+    // Constructors/Destructors
+    //
 
     virtual std::string toString(){
-        return "Pawn :"+ std::to_string(coordinate.getX()) + " - " + std::to_string(coordinate.getY()) ;
+        return "P";
     }
-  /**
+    /**
    * Empty Constructor
    */
-  Pawn (Coordinate coordinate);
+    Pawn (Coordinate coordinate);
 
-  /**
+    /**
    * Empty Destructor
    */
-  virtual ~Pawn ();
+    virtual ~Pawn ();
 
-  // Static Public attributes
-  //  
+    // Static Public attributes
+    //
 
-  // Public attributes
-  //  
-
-
-  // Public attribute accessor methods
-  //  
+    // Public attributes
+    //
 
 
-  // Public attribute accessor methods
-  //  
+    // Public attribute accessor methods
+    //
+
+
+    // Public attribute accessor methods
+    //
 
 
 protected:
-   virtual bool move ( Coordinate coordinate);
-  // Static Protected attributes
-  //  
+    virtual bool eat (Coordinate coordinate);
 
-  // Protected attributes
-  //  
+    virtual bool move ( Coordinate t_coordinate);
+    // Static Protected attributes
+    //
+
+    // Protected attributes
+    //
 
 public:
 
 
-  // Protected attribute accessor methods
-  //  
+    // Protected attribute accessor methods
+    //
 
 protected:
 
 public:
 
 
-  // Protected attribute accessor methods
-  //  
+    // Protected attribute accessor methods
+    //
 
 protected:
 
 
 private:
 
-  // Static Private attributes
-  //  
+    bool isFirstMoove;
 
-  // Private attributes
-  //  
+    // Static Private attributes
+    //
+
+    // Private attributes
+    //
 
 public:
 
 
-  // Private attribute accessor methods
-  //  
+    // Private attribute accessor methods
+    //
 
 private:
 
 public:
 
 
-  // Private attribute accessor methods
-  //  
+    // Private attribute accessor methods
+    //
 
 private:
 

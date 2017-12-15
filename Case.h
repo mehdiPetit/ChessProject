@@ -81,6 +81,8 @@ public:
   Piece* getPiece ()   {
     return piece;
   }
+
+  void switchPiece(Case *caseTwo);
 protected:
 
 
