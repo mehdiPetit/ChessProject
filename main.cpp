@@ -3,7 +3,7 @@
 #include "Game.h"
 int main(int argc, char *argv[])
 {
-    /*
+
     QGuiApplication app(argc, argv);
 
     QQmlApplicationEngine engine;
@@ -11,9 +11,9 @@ int main(int argc, char *argv[])
     if (engine.rootObjects().isEmpty())
         return -1;
     return app.exec();
-    */
-    Game game;
-    game.play();
+
+    /*Game game;
+    game.play();*/
     return 0;
 
 }
