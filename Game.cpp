@@ -20,7 +20,7 @@ bool Game::play(){
     Case * caseFinal;
     do{
         board->refresh(player_1, player_2);
-        board->print();
+        board->print(player_1, player_2);
         if(turn%2 == 0)
         {
             std::cout << "Player 1 : " << std::endl;

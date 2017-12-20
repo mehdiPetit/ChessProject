@@ -24,7 +24,7 @@ public:
    */
   Board ();
   void refresh(Player *player_1, Player *player_2);
-  void print();
+  void print(Player *player_1, Player *player_2);
 
   /**
    * Empty Destructor

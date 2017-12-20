@@ -4,7 +4,7 @@
 
 #include <string>
 #include "Coordinate.h"
-#include <stdlib.h>     /* abs */// Constructors/Destructors
+#include <cmath>     /* abs */// Constructors/Destructors
 #include "Board.h"
 
 /**
