@@ -25,7 +25,7 @@ Player::Player (std::string color) {
     pieces.push_front(new Knight(Coordinate(6, ligne_1)));
     pieces.push_front(new Bishop(Coordinate(2, ligne_1)));
     pieces.push_front(new Bishop(Coordinate(5, ligne_1)));
-    pieces.push_front(new Queen(Coordinate(3, ligne_1)));
+    pieces.push_front(new Queen(Coordinate(/*3*/1, 4* (ligne_2 -  ligne_1)+ligne_1)));
 
 
     for(int i = 0; i < 8; i++)
@@ -66,18 +66,236 @@ bool Player::isPlayerChessed(Board *board){
     {
         iterator = -1;
     }
+
+
     Piece *pieceTemp = board->getBoard()[y + iterator][x + iterator].getPiece();
     if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "P")
     {
         chessed = true;
     }
+
     pieceTemp = board->getBoard()[y + iterator][x - iterator].getPiece();
     if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "P")
     {
         chessed = true;
     }
 
+    if( x + 2 < 8 && y + 1 < 8 )
+    {
+        pieceTemp = board->getBoard()[y + 1 ][x + 2].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
 
+    }
+    if( x + 1 < 8 && y + 2 < 8)
+    {
+        pieceTemp = board->getBoard()[y + 2 ][x + 1].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
+    }
+    if( x - 2 > 0 && y + 1 < 8)
+    {
+        pieceTemp = board->getBoard()[y + 1 ][x - 2].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
+    }
+    if( x - 1 > 0 && y + 2 < 8)
+    {
+        pieceTemp = board->getBoard()[y + 2 ][x - 1].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
+    }
+    if( x + 2 < 8 && y - 1 > 0)
+    {
+        pieceTemp = board->getBoard()[y - 1 ][x + 2].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
+    }
+    if( x + 1 < 8 && y - 2 > 0)
+    {
+        pieceTemp = board->getBoard()[y - 2 ][x + 1].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
+    }
+    if( x - 2 > 0 && y - 1 > 0)
+    {
+        pieceTemp = board->getBoard()[y - 1 ][x - 2].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
+    }
+    if( x - 1 > 0 && y - 2 > 0)
+    {
+        pieceTemp = board->getBoard()[y - 2 ][x - 1].getPiece();
+        if( pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && pieceTemp->toString() == "k")
+        {
+            chessed = true;
+        }
+    }
+
+    int cpt = x;
+
+    while (cpt < 7 && board->getBoard()[y][cpt + 1].getPiece() == NULL)
+    {
+        cpt++;
+    }
+    pieceTemp = board->getBoard()[y][cpt].getPiece();
+
+    if( pieceTemp != NULL && cpt != 8  && (!this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "R" ||pieceTemp->toString() == "Q" ) ))
+    {
+        chessed = true;
+    }
+
+     cpt = x ;
+
+    while (cpt > 1 && board->getBoard()[y][cpt - 1].getPiece() == NULL)
+    {
+        cpt--;
+    }
+    pieceTemp = board->getBoard()[y][cpt].getPiece();
+
+    if( pieceTemp != NULL && cpt != 0  && (!this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "R" ||pieceTemp->toString() == "Q" ) ))
+    {
+        chessed = true;
+    }
+
+    cpt = y ;
+
+    while (cpt < 7 && board->getBoard()[cpt +1 ][x].getPiece() == NULL)
+    {
+        cpt++;
+    }
+    pieceTemp = board->getBoard()[cpt][x].getPiece();
+
+    if(pieceTemp != NULL &&  cpt != 8  && (!this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "R" ||pieceTemp->toString() == "Q" ) ))
+    {
+        chessed = true;
+    }
+
+     cpt = y ;
+
+    while (cpt > 1 && board->getBoard()[cpt -1][x].getPiece() == NULL)
+    {
+        cpt--;
+    }
+    pieceTemp = board->getBoard()[cpt][x].getPiece();
+
+    if( pieceTemp != NULL && cpt != 0  && (!this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "R" ||pieceTemp->toString() == "Q" ) ))
+    {
+        chessed = true;
+    }
+
+
+
+    /** --------------------------------------------------------------------- **/
+
+    int cptX = x;
+    int cptY = y;
+
+    while (cptX < 7 && cptY < 7 && board->getBoard()[cptY +1 ][cptX + 1].getPiece() == NULL)
+    {
+        cptX++;
+        cptY++;
+    }
+
+    if( (cptX != 8 || cptY != 8))
+    {
+        pieceTemp = board->getBoard()[cptY+1][cptX+1].getPiece();
+
+        if(pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "B" ||pieceTemp->toString() == "Q" ) )
+       {
+
+
+            chessed = true;
+
+        }
+    }
+
+    cptX = x;
+    cptY = y;
+
+    while (cptX > 1 && cptY > 1 && board->getBoard()[cptY - 1 ][cptX - 1].getPiece() == NULL )
+    {
+        cptX--;
+        cptY--;
+    }
+
+    if( (cptX != 0 || cptY != 0) )
+    {
+        pieceTemp = board->getBoard()[cptY-1][cptX-1].getPiece();
+         if(pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "B" ||pieceTemp->toString() == "Q" ) )
+        {
+
+
+             chessed = true;
+
+         }
+}
+    cptX = x;
+    cptY = y;
+
+    while (cptX < 7 && cptY > 1 && board->getBoard()[cptY -1 ][ cptX + 1].getPiece() == NULL)
+    {
+        cptX++;
+        cptY--;
+    }
+
+
+
+
+
+    if( (cptX != 8 || cptY != 0))
+    {
+        pieceTemp = board->getBoard()[cptY-1][cptX+1].getPiece();
+
+        if(pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "B" ||pieceTemp->toString() == "Q" ) )
+       {
+
+
+            chessed = true;
+
+        }
+    }
+
+
+
+
+
+    cptX = x;
+    cptY = y;
+
+    while (cptX > 1 && cptY < 7 && board->getBoard()[cptY  + 1 ][ cptX - 1].getPiece() == NULL)
+    {
+        cptX--;
+        cptY++;
+    }
+    if( (cptX != 0 || cptY != 8))
+    {
+        pieceTemp = board->getBoard()[cptY+1][cptX-1].getPiece();
+
+        if(pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "B" ||pieceTemp->toString() == "Q" ) )
+       {
+
+
+            chessed = true;
+
+        }
+    }
+
+    /** --------------------------------------------------------------------- **/
     return chessed;
 }
 

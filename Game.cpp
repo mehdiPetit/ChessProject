@@ -89,6 +89,8 @@ bool Game::play(){
         }while(!isMoveAllowed);
 
         caseDepart->setPiece(NULL);
+        board->refresh(player_1, player_2);
+        board->print(player_1, player_2);
         if(passivePlayer->isPlayerChessed(board)){
             std::cout<<"CHESS !!!!!!";
         }
