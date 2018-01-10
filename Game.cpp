@@ -72,7 +72,10 @@ bool Game::play(){
             {
                 isMoveAllowed = caseDepart->getPiece()->eat(finalCoordinate, board);
                 if(isMoveAllowed)
+                {
                     passivePlayer->getPieces().remove(board->getBoard()[finalCoordinate.getY()][finalCoordinate.getX()].getPiece());
+                    passivePlayer->setScore(passivePlayer->getScore() - board->getBoard()[finalCoordinate.getY()][finalCoordinate.getX()].getPiece()->getValue());
+                }
             }
             else
             {
@@ -86,11 +89,15 @@ bool Game::play(){
         }while(!isMoveAllowed);
 
         caseDepart->setPiece(NULL);
-
+        if(passivePlayer->isPlayerChessed(board)){
+            std::cout<<"CHESS !!!!!!";
+        }
         turn++;
     }while(!endOfGame);
     return endOfGame;
 }
+
+
 
 Game::~Game () { }
 

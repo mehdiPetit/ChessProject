@@ -32,6 +32,7 @@ public:
 
   Player (std::string color_temp);
   bool isPieceOwner(Piece *piece);
+  bool isPlayerChessed(Board *board);
 
   /**
    * Empty Destructor
@@ -62,8 +63,8 @@ protected:
   //  
 
   std::list<Piece*> pieces;
-  std::string color;
 public:
+  std::string color;
 
 
   // Protected attribute accessor methods
