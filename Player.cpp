@@ -211,7 +211,7 @@ bool Player::isPlayerChessed(Board *board){
         cptY++;
     }
 
-    if( (cptX != 8 || cptY != 8))
+    if( (cptX != 7 && cptY != 7))
     {
         pieceTemp = board->getBoard()[cptY+1][cptX+1].getPiece();
 
@@ -233,7 +233,7 @@ bool Player::isPlayerChessed(Board *board){
         cptY--;
     }
 
-    if( (cptX != 0 || cptY != 0) )
+    if( (cptX != 0 && cptY != 0) )
     {
         pieceTemp = board->getBoard()[cptY-1][cptX-1].getPiece();
          if(pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "B" ||pieceTemp->toString() == "Q" ) )
@@ -257,7 +257,7 @@ bool Player::isPlayerChessed(Board *board){
 
 
 
-    if( (cptX != 8 || cptY != 0))
+    if( (cptX != 7 && cptY != 0))
     {
         pieceTemp = board->getBoard()[cptY-1][cptX+1].getPiece();
 
@@ -282,7 +282,7 @@ bool Player::isPlayerChessed(Board *board){
         cptX--;
         cptY++;
     }
-    if( (cptX != 0 || cptY != 8))
+    if( (cptX != 0 && cptY != 7))
     {
         pieceTemp = board->getBoard()[cptY+1][cptX-1].getPiece();
 

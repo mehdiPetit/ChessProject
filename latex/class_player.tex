@@ -1,0 +1,175 @@
+\hypertarget{class_player}{}\section{Player Class Reference}
+\label{class_player}\index{Player@{Player}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+
+
+Collaboration diagram for Player\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=186pt]{class_player__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player} ()
+\item 
+\hyperlink{class_player_a355464bd2331faa49dfcc259174ac0ee}{Player} (std\+::string color\+\_\+temp)
+\item 
+bool \hyperlink{class_player_acd154fbc75679e8bd21ae790836c8623}{is\+Piece\+Owner} (\hyperlink{class_piece}{Piece} $\ast$piece)
+\item 
+bool \hyperlink{class_player_ab792f06e8da9ce878b2de013fb04b103}{is\+Player\+Chessed} (\hyperlink{class_board}{Board} $\ast$board)
+\item 
+virtual \hyperlink{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{$\sim$\+Player} ()
+\item 
+void \hyperlink{class_player_a31d381a29c010c26d69a4cfd30c37049}{set\+Pieces} (std\+::list$<$ \hyperlink{class_piece}{Piece} $\ast$ $>$ new\+\_\+var)
+\item 
+std\+::list$<$ \hyperlink{class_piece}{Piece} $\ast$ $>$ \& \hyperlink{class_player_a479c15c00634b36e3391443afe5b9b80}{get\+Pieces} ()
+\item 
+void \hyperlink{class_player_ae02f0030bc93cd08c014dd48943c0304}{set\+Score} (unsigned int new\+\_\+var)
+\item 
+unsigned int \hyperlink{class_player_a0a4b4a42bca1b1d62be928ce234d8df5}{get\+Score} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \hyperlink{class_player_ac2e6856437961bb592e38ecb40c2f348}{color}
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::list$<$ \hyperlink{class_piece}{Piece} $\ast$ $>$ \hyperlink{class_player_aae72d6ce61d41bee8d04318baa36b239}{pieces}
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_player_acd7645a07397ed3d4a499b139784eeb3}{init\+Attributes} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_player_a38a6dafe988a768a435cc0a9fde38e46}{score}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_player}{Player} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{\texorpdfstring{Player()}{Player()}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{}\label{class_player_affe0cc3cb714f6deb4e62f0c0d3f1fd8}
+Empty Constructor \index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\subsubsection[{\texorpdfstring{Player(std\+::string color\+\_\+temp)}{Player(std::string color_temp)}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::\+Player (
+\begin{DoxyParamCaption}
+\item[{std\+::string}]{color\+\_\+temp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_a355464bd2331faa49dfcc259174ac0ee}{}\label{class_player_a355464bd2331faa49dfcc259174ac0ee}
+\index{Player@{Player}!````~Player@{$\sim$\+Player}}
+\index{````~Player@{$\sim$\+Player}!Player@{Player}}
+\subsubsection[{\texorpdfstring{$\sim$\+Player()}{~Player()}}]{\setlength{\rightskip}{0pt plus 5cm}Player\+::$\sim$\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_player_a749d2c00e1fe0f5c2746f7505a58c062}{}\label{class_player_a749d2c00e1fe0f5c2746f7505a58c062}
+Empty Destructor 
+
+\subsection{Member Function Documentation}
+\index{Player@{Player}!get\+Pieces@{get\+Pieces}}
+\index{get\+Pieces@{get\+Pieces}!Player@{Player}}
+\subsubsection[{\texorpdfstring{get\+Pieces()}{getPieces()}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Piece}$\ast$$>$\& Player\+::get\+Pieces (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_player_a479c15c00634b36e3391443afe5b9b80}{}\label{class_player_a479c15c00634b36e3391443afe5b9b80}
+Get the value of pieces \begin{DoxyReturn}{Returns}
+the value of pieces 
+\end{DoxyReturn}
+\index{Player@{Player}!get\+Score@{get\+Score}}
+\index{get\+Score@{get\+Score}!Player@{Player}}
+\subsubsection[{\texorpdfstring{get\+Score()}{getScore()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Player\+::get\+Score (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_player_a0a4b4a42bca1b1d62be928ce234d8df5}{}\label{class_player_a0a4b4a42bca1b1d62be928ce234d8df5}
+Get the value of score \begin{DoxyReturn}{Returns}
+the value of score 
+\end{DoxyReturn}
+\index{Player@{Player}!init\+Attributes@{init\+Attributes}}
+\index{init\+Attributes@{init\+Attributes}!Player@{Player}}
+\subsubsection[{\texorpdfstring{init\+Attributes()}{initAttributes()}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::init\+Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_player_acd7645a07397ed3d4a499b139784eeb3}{}\label{class_player_acd7645a07397ed3d4a499b139784eeb3}
+\index{Player@{Player}!is\+Piece\+Owner@{is\+Piece\+Owner}}
+\index{is\+Piece\+Owner@{is\+Piece\+Owner}!Player@{Player}}
+\subsubsection[{\texorpdfstring{is\+Piece\+Owner(\+Piece $\ast$piece)}{isPieceOwner(Piece *piece)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::is\+Piece\+Owner (
+\begin{DoxyParamCaption}
+\item[{{\bf Piece} $\ast$}]{piece}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_acd154fbc75679e8bd21ae790836c8623}{}\label{class_player_acd154fbc75679e8bd21ae790836c8623}
+\index{Player@{Player}!is\+Player\+Chessed@{is\+Player\+Chessed}}
+\index{is\+Player\+Chessed@{is\+Player\+Chessed}!Player@{Player}}
+\subsubsection[{\texorpdfstring{is\+Player\+Chessed(\+Board $\ast$board)}{isPlayerChessed(Board *board)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Player\+::is\+Player\+Chessed (
+\begin{DoxyParamCaption}
+\item[{{\bf Board} $\ast$}]{board}
+\end{DoxyParamCaption}
+)}\hypertarget{class_player_ab792f06e8da9ce878b2de013fb04b103}{}\label{class_player_ab792f06e8da9ce878b2de013fb04b103}
+
+
+
+
+
+
+\index{Player@{Player}!set\+Pieces@{set\+Pieces}}
+\index{set\+Pieces@{set\+Pieces}!Player@{Player}}
+\subsubsection[{\texorpdfstring{set\+Pieces(std\+::list$<$ Piece $\ast$ $>$ new\+\_\+var)}{setPieces(std::list< Piece * > new_var)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::set\+Pieces (
+\begin{DoxyParamCaption}
+\item[{std\+::list$<$ {\bf Piece} $\ast$ $>$}]{new\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_player_a31d381a29c010c26d69a4cfd30c37049}{}\label{class_player_a31d381a29c010c26d69a4cfd30c37049}
+Set the value of pieces 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+var} & the new value of pieces \\
+\hline
+\end{DoxyParams}
+\index{Player@{Player}!set\+Score@{set\+Score}}
+\index{set\+Score@{set\+Score}!Player@{Player}}
+\subsubsection[{\texorpdfstring{set\+Score(unsigned int new\+\_\+var)}{setScore(unsigned int new_var)}}]{\setlength{\rightskip}{0pt plus 5cm}void Player\+::set\+Score (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{new\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_player_ae02f0030bc93cd08c014dd48943c0304}{}\label{class_player_ae02f0030bc93cd08c014dd48943c0304}
+Set the value of score 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+var} & the new value of score \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\index{Player@{Player}!color@{color}}
+\index{color@{color}!Player@{Player}}
+\subsubsection[{\texorpdfstring{color}{color}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::string Player\+::color}\hypertarget{class_player_ac2e6856437961bb592e38ecb40c2f348}{}\label{class_player_ac2e6856437961bb592e38ecb40c2f348}
+\index{Player@{Player}!pieces@{pieces}}
+\index{pieces@{pieces}!Player@{Player}}
+\subsubsection[{\texorpdfstring{pieces}{pieces}}]{\setlength{\rightskip}{0pt plus 5cm}std\+::list$<${\bf Piece}$\ast$$>$ Player\+::pieces\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_player_aae72d6ce61d41bee8d04318baa36b239}{}\label{class_player_aae72d6ce61d41bee8d04318baa36b239}
+\index{Player@{Player}!score@{score}}
+\index{score@{score}!Player@{Player}}
+\subsubsection[{\texorpdfstring{score}{score}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Player\+::score\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_player_a38a6dafe988a768a435cc0a9fde38e46}{}\label{class_player_a38a6dafe988a768a435cc0a9fde38e46}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_player_8h}{Player.\+h}\item 
+\hyperlink{_player_8cpp}{Player.\+cpp}\end{DoxyCompactItemize}

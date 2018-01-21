@@ -1,0 +1,116 @@
+\hypertarget{class_pawn}{}\section{Pawn Class Reference}
+\label{class_pawn}\index{Pawn@{Pawn}}
+
+
+{\ttfamily \#include $<$Pawn.\+h$>$}
+
+
+
+Inheritance diagram for Pawn\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{class_pawn__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Pawn\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{class_pawn__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_pawn_afac4abaf92106777e20d21fde635ffc4}{to\+String} ()
+\item 
+\hyperlink{class_pawn_a28054ee4fa72e69892be4d250191aa22}{Pawn} (\hyperlink{class_coordinate}{Coordinate} \hyperlink{class_piece_a9e92373c8fffc1f5efb20d62204b70cf}{coordinate})
+\item 
+virtual \hyperlink{class_pawn_a3095938fb8326469c3bd05da0b8f50af}{$\sim$\+Pawn} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_pawn_ae5ac3a2e71798fc8b6226bb9590497ea}{move} (\hyperlink{class_coordinate}{Coordinate} \hyperlink{class_piece_a9e92373c8fffc1f5efb20d62204b70cf}{coordinate}, \hyperlink{class_board}{Board} $\ast$board)
+\item 
+virtual bool \hyperlink{class_pawn_a3a6fd81c625f8df7d2ae90520c0937fe}{eat} (\hyperlink{class_coordinate}{Coordinate} \hyperlink{class_piece_a9e92373c8fffc1f5efb20d62204b70cf}{coordinate}, \hyperlink{class_board}{Board} $\ast$board)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_pawn_abf900800320dfe79093b50baeda255d4}{is\+First\+Moove}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_pawn}{Pawn} 
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\index{Pawn@{Pawn}!Pawn@{Pawn}}
+\subsubsection[{\texorpdfstring{Pawn(\+Coordinate coordinate)}{Pawn(Coordinate coordinate)}}]{\setlength{\rightskip}{0pt plus 5cm}Pawn\+::\+Pawn (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordinate}}]{coordinate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_pawn_a28054ee4fa72e69892be4d250191aa22}{}\label{class_pawn_a28054ee4fa72e69892be4d250191aa22}
+Empty Constructor \index{Pawn@{Pawn}!````~Pawn@{$\sim$\+Pawn}}
+\index{````~Pawn@{$\sim$\+Pawn}!Pawn@{Pawn}}
+\subsubsection[{\texorpdfstring{$\sim$\+Pawn()}{~Pawn()}}]{\setlength{\rightskip}{0pt plus 5cm}Pawn\+::$\sim$\+Pawn (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_pawn_a3095938fb8326469c3bd05da0b8f50af}{}\label{class_pawn_a3095938fb8326469c3bd05da0b8f50af}
+Empty Destructor 
+
+\subsection{Member Function Documentation}
+\index{Pawn@{Pawn}!eat@{eat}}
+\index{eat@{eat}!Pawn@{Pawn}}
+\subsubsection[{\texorpdfstring{eat(\+Coordinate coordinate, Board $\ast$board)}{eat(Coordinate coordinate, Board *board)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pawn\+::eat (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordinate}}]{coordinate, }
+\item[{{\bf Board} $\ast$}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_pawn_a3a6fd81c625f8df7d2ae90520c0937fe}{}\label{class_pawn_a3a6fd81c625f8df7d2ae90520c0937fe}
+
+
+Implements \hyperlink{class_piece_a94fffb0c34e637910c08ded95185e135}{Piece}.
+
+\index{Pawn@{Pawn}!move@{move}}
+\index{move@{move}!Pawn@{Pawn}}
+\subsubsection[{\texorpdfstring{move(\+Coordinate coordinate, Board $\ast$board)}{move(Coordinate coordinate, Board *board)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pawn\+::move (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordinate}}]{coordinate, }
+\item[{{\bf Board} $\ast$}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{class_pawn_ae5ac3a2e71798fc8b6226bb9590497ea}{}\label{class_pawn_ae5ac3a2e71798fc8b6226bb9590497ea}
+
+
+Implements \hyperlink{class_piece_a4939b8f41018950374d294b256906ec3}{Piece}.
+
+\index{Pawn@{Pawn}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Pawn@{Pawn}}
+\subsubsection[{\texorpdfstring{to\+String()}{toString()}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Pawn\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\hypertarget{class_pawn_afac4abaf92106777e20d21fde635ffc4}{}\label{class_pawn_afac4abaf92106777e20d21fde635ffc4}
+
+
+Implements \hyperlink{class_piece_a2a017f933a49e17d9a60a665ee9df605}{Piece}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Pawn@{Pawn}!is\+First\+Moove@{is\+First\+Moove}}
+\index{is\+First\+Moove@{is\+First\+Moove}!Pawn@{Pawn}}
+\subsubsection[{\texorpdfstring{is\+First\+Moove}{isFirstMoove}}]{\setlength{\rightskip}{0pt plus 5cm}bool Pawn\+::is\+First\+Moove\hspace{0.3cm}{\ttfamily [private]}}\hypertarget{class_pawn_abf900800320dfe79093b50baeda255d4}{}\label{class_pawn_abf900800320dfe79093b50baeda255d4}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_pawn_8h}{Pawn.\+h}\item 
+\hyperlink{_pawn_8cpp}{Pawn.\+cpp}\end{DoxyCompactItemize}

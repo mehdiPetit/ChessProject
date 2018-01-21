@@ -1,0 +1,13 @@
+#ifndef MEMENTOGAME_H
+#define MEMENTOGAME_H
+#include "Game.h"
+#include<list>
+class MementoGame
+{
+public:
+    MementoGame();
+    std::list<Game> mementoGame;
+    friend class Game;
+};
+
+#endif // MEMENTOGAME_H

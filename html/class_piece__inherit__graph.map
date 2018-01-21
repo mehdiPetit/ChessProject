@@ -1,0 +1,8 @@
+<map id="Piece" name="Piece">
+<area shape="rect" id="node2" href="$class_bishop.html" title="{Bishop\n||+ Bishop()\l+ toString()\l+ ~Bishop()\l# move()\l# eat()\l}" alt="" coords="5,277,96,413"/>
+<area shape="rect" id="node3" href="$class_king.html" title="{King\n||+ toString()\l+ King()\l+ ~King()\l# move()\l# eat()\l}" alt="" coords="121,277,207,413"/>
+<area shape="rect" id="node4" href="$class_knight.html" title="{Knight\n||+ toString()\l+ Knight()\l+ ~Knight()\l# move()\l# eat()\l}" alt="" coords="231,277,318,413"/>
+<area shape="rect" id="node5" href="$class_pawn.html" title="{Pawn\n|&#45; isFirstMoove\l|+ toString()\l+ Pawn()\l+ ~Pawn()\l# move()\l# eat()\l}" alt="" coords="342,277,447,413"/>
+<area shape="rect" id="node6" href="$class_queen.html" title="{Queen\n||+ toString()\l+ Queen()\l+ ~Queen()\l# move()\l# eat()\l}" alt="" coords="472,277,560,413"/>
+<area shape="rect" id="node7" href="$class_rook.html" title="{Rook\n||+ toString()\l+ Rook()\l+ ~Rook()\l# move()\l# eat()\l}" alt="" coords="585,277,671,413"/>
+</map>
