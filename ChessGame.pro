@@ -27,8 +27,7 @@ SOURCES += main.cpp \
     Piece.cpp \
     Game.cpp \
     Case.cpp \
-    Board.cpp \
-    MementoGame.cpp
+    Board.cpp
 
 RESOURCES += qml.qrc
 
@@ -55,5 +54,4 @@ HEADERS += \
     Queen.h \
     Game.h \
     Board.h \
-    Case.h \
-    MementoGame.h
+    Case.h

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['mementoplayer',['MementoPlayer',['../class_memento_player.html',1,'']]]
+  ['mementogame',['MementoGame',['../class_memento_game.html',1,'']]]
 ];

@@ -1,4 +1,6 @@
 <map id="Game.h" name="Game.h">
 <area shape="rect" id="node2" href="$_game_8cpp.html" title="Game.cpp" alt="" coords="5,80,88,107"/>
 <area shape="rect" id="node3" href="$main_8cpp.html" title="main.cpp" alt="" coords="112,80,187,107"/>
+<area shape="rect" id="node4" href="$_memento_game_8h.html" title="MementoGame.h" alt="" coords="211,80,333,107"/>
+<area shape="rect" id="node5" href="$_memento_game_8cpp.html" title="MementoGame.cpp" alt="" coords="204,155,340,181"/>
 </map>

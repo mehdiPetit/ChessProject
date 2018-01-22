@@ -25,7 +25,7 @@ Player::Player (std::string color) {
     pieces.push_front(new Knight(Coordinate(6, ligne_1)));
     pieces.push_front(new Bishop(Coordinate(2, ligne_1)));
     pieces.push_front(new Bishop(Coordinate(5, ligne_1)));
-    pieces.push_front(new Queen(Coordinate(/*3*/1, 4* (ligne_2 -  ligne_1)+ligne_1)));
+    pieces.push_front(new Queen(Coordinate(3,ligne_1)));
 
 
     for(int i = 0; i < 8; i++)

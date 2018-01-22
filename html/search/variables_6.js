@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x',['x',['../class_coordinate.html#aed3fecfb15ebabe5b4905820c1999b0b',1,'Coordinate']]]
+  ['value',['value',['../class_piece.html#a8933ca826f6c9b958f781eaa0160c2b7',1,'Piece']]]
 ];

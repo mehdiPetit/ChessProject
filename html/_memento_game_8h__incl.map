@@ -1,0 +1,14 @@
+<map id="MementoGame.h" name="MementoGame.h">
+<area shape="rect" id="node2" href="$_game_8h.html" title="Game.h" alt="" coords="411,80,479,107"/>
+<area shape="rect" id="node4" href="$_board_8h.html" title="Board.h" alt="" coords="34,379,101,405"/>
+<area shape="rect" id="node6" href="$_player_8h.html" title="Player.h" alt="" coords="410,155,480,181"/>
+<area shape="rect" id="node5" href="$_case_8h.html" title="Case.h" alt="" coords="37,453,101,480"/>
+<area shape="rect" id="node8" href="$_piece_8h.html" title="Piece.h" alt="" coords="342,304,409,331"/>
+<area shape="rect" id="node12" href="$_rook_8h.html" title="Rook.h" alt="" coords="413,229,477,256"/>
+<area shape="rect" id="node13" href="$_knight_8h.html" title="Knight.h" alt="" coords="502,229,572,256"/>
+<area shape="rect" id="node14" href="$_bishop_8h.html" title="Bishop.h" alt="" coords="596,229,670,256"/>
+<area shape="rect" id="node15" href="$_queen_8h.html" title="Queen.h" alt="" coords="94,229,164,256"/>
+<area shape="rect" id="node16" href="$_king_8h.html" title="King.h" alt="" coords="189,229,248,256"/>
+<area shape="rect" id="node17" href="$_pawn_8h.html" title="Pawn.h" alt="" coords="272,229,338,256"/>
+<area shape="rect" id="node9" href="$_coordinate_8h.html" title="Coordinate.h" alt="" coords="277,379,373,405"/>
+</map>
