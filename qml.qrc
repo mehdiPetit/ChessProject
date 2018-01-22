@@ -2,5 +2,18 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>Board.qml</file>
+        <file>cavalier.png</file>
+        <file>004-king.png</file>
+        <file>003-pawn.png</file>
+        <file>005-rook.png</file>
+        <file>002-knight.png</file>
+        <file>006-bishop.png</file>
+        <file>001-queen.png</file>
+        <file>001-queen_white.png</file>
+        <file>004-king_white.png</file>
+        <file>006-bishop_white.png</file>
+        <file>005-rook_white.png</file>
+        <file>003-pawn_white.png</file>
+        <file>002-knight_white.png</file>
     </qresource>
 </RCC>

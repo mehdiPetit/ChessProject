@@ -1,0 +1,4 @@
+<map id="Knight" name="Knight">
+<area shape="rect" id="node2" href="$class_piece.html" title="{Piece\n|# value\l|+ toString()\l+ Piece()\l+ Piece()\l+ ~Piece()\l+ move()\l+ eat()\l+ setValue()\l+ getValue()\l+ setCoordinate()\l+ getCoordinate()\l}" alt="" coords="5,263,128,472"/>
+<area shape="rect" id="node3" href="$class_coordinate.html" title="{Coordinate\n|&#45; x\l&#45; y\l|+ Coordinate()\l+ Coordinate()\l+ read()\l+ ~Coordinate()\l+ setX()\l+ getX()\l+ setY()\l+ getY()\l}" alt="" coords="10,5,123,200"/>
+</map>

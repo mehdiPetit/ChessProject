@@ -53,8 +53,8 @@ protected:
   //  
 
 Board *board;
-Player *player_1;
-Player *player_2;
+std::list<Player *>player_1;
+std::list<Player *>player_2;
 public:
 
 
@@ -85,6 +85,8 @@ public:
   Board *getBoard ()   {
     return board;
   }
+
+
 protected:
 
 

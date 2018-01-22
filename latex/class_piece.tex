@@ -1,0 +1,185 @@
+\hypertarget{class_piece}{}\section{Piece Class Reference}
+\label{class_piece}\index{Piece@{Piece}}
+
+
+{\ttfamily \#include $<$Piece.\+h$>$}
+
+
+
+Inheritance diagram for Piece\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_piece__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Piece\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{class_piece__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\+::string \hyperlink{class_piece_a2a017f933a49e17d9a60a665ee9df605}{to\+String} ()=0
+\item 
+\hyperlink{class_piece_afc89acd5b05abd2f8fa4f60ee7ca3b20}{Piece} (unsigned int var\+\_\+temp)
+\item 
+\hyperlink{class_piece_af1ce807c73a4b82abf28161ea07a95a2}{Piece} (unsigned int var\+\_\+temp, \hyperlink{class_coordinate}{Coordinate} \hyperlink{class_piece_a9e92373c8fffc1f5efb20d62204b70cf}{coordinate})
+\item 
+virtual \hyperlink{class_piece_a5d7a4f6bade94cb33b6f634de8aa7918}{$\sim$\+Piece} ()
+\item 
+virtual bool \hyperlink{class_piece_a4939b8f41018950374d294b256906ec3}{move} (\hyperlink{class_coordinate}{Coordinate} t\+\_\+coordinate, \hyperlink{class_board}{Board} $\ast$board)=0
+\item 
+virtual bool \hyperlink{class_piece_a94fffb0c34e637910c08ded95185e135}{eat} (\hyperlink{class_coordinate}{Coordinate} t\+\_\+coordinate, \hyperlink{class_board}{Board} $\ast$board)=0
+\item 
+void \hyperlink{class_piece_a889ea7d9eb4b691a07143e9084382b2a}{set\+Value} (unsigned int new\+\_\+var)
+\item 
+unsigned int \hyperlink{class_piece_a83cba58885b2a385c6b858c1df33de29}{get\+Value} ()
+\item 
+void \hyperlink{class_piece_aadf96b2e3cdf28dcc52f670f8bc4e0f5}{set\+Coordinate} (\hyperlink{class_coordinate}{Coordinate} new\+\_\+var)
+\item 
+\hyperlink{class_coordinate}{Coordinate} \hyperlink{class_piece_a847e09b148d9b7125ef9ef8f1d970862}{get\+Coordinate} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_piece_a8933ca826f6c9b958f781eaa0160c2b7}{value}
+\item 
+\hyperlink{class_coordinate}{Coordinate} \hyperlink{class_piece_a9e92373c8fffc1f5efb20d62204b70cf}{coordinate}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{Piece(unsigned int var\+\_\+temp)}{Piece(unsigned int var_temp)}}]{\setlength{\rightskip}{0pt plus 5cm}Piece\+::\+Piece (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{var\+\_\+temp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_piece_afc89acd5b05abd2f8fa4f60ee7ca3b20}{}\label{class_piece_afc89acd5b05abd2f8fa4f60ee7ca3b20}
+Empty Constructor \index{Piece@{Piece}!Piece@{Piece}}
+\index{Piece@{Piece}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{Piece(unsigned int var\+\_\+temp, Coordinate coordinate)}{Piece(unsigned int var_temp, Coordinate coordinate)}}]{\setlength{\rightskip}{0pt plus 5cm}Piece\+::\+Piece (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{var\+\_\+temp, }
+\item[{{\bf Coordinate}}]{coordinate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_piece_af1ce807c73a4b82abf28161ea07a95a2}{}\label{class_piece_af1ce807c73a4b82abf28161ea07a95a2}
+\index{Piece@{Piece}!````~Piece@{$\sim$\+Piece}}
+\index{````~Piece@{$\sim$\+Piece}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{$\sim$\+Piece()}{~Piece()}}]{\setlength{\rightskip}{0pt plus 5cm}Piece\+::$\sim$\+Piece (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_piece_a5d7a4f6bade94cb33b6f634de8aa7918}{}\label{class_piece_a5d7a4f6bade94cb33b6f634de8aa7918}
+Empty Destructor 
+
+\subsection{Member Function Documentation}
+\index{Piece@{Piece}!eat@{eat}}
+\index{eat@{eat}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{eat(\+Coordinate t\+\_\+coordinate, Board $\ast$board)=0}{eat(Coordinate t_coordinate, Board *board)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Piece\+::eat (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordinate}}]{t\+\_\+coordinate, }
+\item[{{\bf Board} $\ast$}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_piece_a94fffb0c34e637910c08ded95185e135}{}\label{class_piece_a94fffb0c34e637910c08ded95185e135}
+
+
+Implemented in \hyperlink{class_bishop_a2ff965d9d180e94989953544f0e9ae9b}{Bishop}, \hyperlink{class_king_abd8a9ef79a3a139afa83c2814edc852e}{King}, \hyperlink{class_knight_a5f92f60471d409e3afddefd760d993ec}{Knight}, \hyperlink{class_queen_adc0da381a4d81ba55cbdbd574e1ba7c9}{Queen}, \hyperlink{class_pawn_a3a6fd81c625f8df7d2ae90520c0937fe}{Pawn}, and \hyperlink{class_rook_aeb942bed9da83e30ab23d214e60597a6}{Rook}.
+
+\index{Piece@{Piece}!get\+Coordinate@{get\+Coordinate}}
+\index{get\+Coordinate@{get\+Coordinate}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{get\+Coordinate()}{getCoordinate()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coordinate} Piece\+::get\+Coordinate (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_piece_a847e09b148d9b7125ef9ef8f1d970862}{}\label{class_piece_a847e09b148d9b7125ef9ef8f1d970862}
+Get the value of coordinate \begin{DoxyReturn}{Returns}
+the value of coordinate 
+\end{DoxyReturn}
+\index{Piece@{Piece}!get\+Value@{get\+Value}}
+\index{get\+Value@{get\+Value}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{get\+Value()}{getValue()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Piece\+::get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_piece_a83cba58885b2a385c6b858c1df33de29}{}\label{class_piece_a83cba58885b2a385c6b858c1df33de29}
+Get the value of value \begin{DoxyReturn}{Returns}
+the value of value 
+\end{DoxyReturn}
+\index{Piece@{Piece}!move@{move}}
+\index{move@{move}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{move(\+Coordinate t\+\_\+coordinate, Board $\ast$board)=0}{move(Coordinate t_coordinate, Board *board)=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Piece\+::move (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordinate}}]{t\+\_\+coordinate, }
+\item[{{\bf Board} $\ast$}]{board}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_piece_a4939b8f41018950374d294b256906ec3}{}\label{class_piece_a4939b8f41018950374d294b256906ec3}
+
+
+Implemented in \hyperlink{class_bishop_afddd21905462db28e4f3f694d3f156df}{Bishop}, \hyperlink{class_king_ac9319f67056661e2cf0abe05a78407ee}{King}, \hyperlink{class_knight_a852359fbd2d2d5e00445d07c3ec6fdfe}{Knight}, \hyperlink{class_queen_afe77ad943cc3300d822d8b9d18598737}{Queen}, \hyperlink{class_pawn_ae5ac3a2e71798fc8b6226bb9590497ea}{Pawn}, and \hyperlink{class_rook_ad6102df705a5dccea646d8afcbd72ae4}{Rook}.
+
+\index{Piece@{Piece}!set\+Coordinate@{set\+Coordinate}}
+\index{set\+Coordinate@{set\+Coordinate}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{set\+Coordinate(\+Coordinate new\+\_\+var)}{setCoordinate(Coordinate new_var)}}]{\setlength{\rightskip}{0pt plus 5cm}void Piece\+::set\+Coordinate (
+\begin{DoxyParamCaption}
+\item[{{\bf Coordinate}}]{new\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_piece_aadf96b2e3cdf28dcc52f670f8bc4e0f5}{}\label{class_piece_aadf96b2e3cdf28dcc52f670f8bc4e0f5}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em board} & \\
+\hline
+{\em coordinate} & Set the value of coordinate \\
+\hline
+{\em new\+\_\+var} & the new value of coordinate \\
+\hline
+\end{DoxyParams}
+\index{Piece@{Piece}!set\+Value@{set\+Value}}
+\index{set\+Value@{set\+Value}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{set\+Value(unsigned int new\+\_\+var)}{setValue(unsigned int new_var)}}]{\setlength{\rightskip}{0pt plus 5cm}void Piece\+::set\+Value (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{new\+\_\+var}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_piece_a889ea7d9eb4b691a07143e9084382b2a}{}\label{class_piece_a889ea7d9eb4b691a07143e9084382b2a}
+Set the value of value 
+\begin{DoxyParams}{Parameters}
+{\em new\+\_\+var} & the new value of value \\
+\hline
+\end{DoxyParams}
+\index{Piece@{Piece}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{to\+String()=0}{toString()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\+::string Piece\+::to\+String (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_piece_a2a017f933a49e17d9a60a665ee9df605}{}\label{class_piece_a2a017f933a49e17d9a60a665ee9df605}
+
+
+Implemented in \hyperlink{class_bishop_af69ba4eec8bcf5dad66c8071a168bdba}{Bishop}, \hyperlink{class_king_a445fa11a84a95f5257eea4fb0a4f4839}{King}, \hyperlink{class_pawn_afac4abaf92106777e20d21fde635ffc4}{Pawn}, \hyperlink{class_queen_a1cf5f21870e6b2ec107a9e3280a69da6}{Queen}, \hyperlink{class_rook_a6b9d17ae219d74742a7deacf52aa4641}{Rook}, and \hyperlink{class_knight_a3ecdeb255fa07eaa22d0cc948520c181}{Knight}.
+
+
+
+\subsection{Member Data Documentation}
+\index{Piece@{Piece}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{coordinate}{coordinate}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Coordinate} Piece\+::coordinate\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_piece_a9e92373c8fffc1f5efb20d62204b70cf}{}\label{class_piece_a9e92373c8fffc1f5efb20d62204b70cf}
+\index{Piece@{Piece}!value@{value}}
+\index{value@{value}!Piece@{Piece}}
+\subsubsection[{\texorpdfstring{value}{value}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int Piece\+::value\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_piece_a8933ca826f6c9b958f781eaa0160c2b7}{}\label{class_piece_a8933ca826f6c9b958f781eaa0160c2b7}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_piece_8h}{Piece.\+h}\item 
+\hyperlink{_piece_8cpp}{Piece.\+cpp}\end{DoxyCompactItemize}

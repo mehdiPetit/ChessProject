@@ -25,7 +25,7 @@ Player::Player (std::string color) {
     pieces.push_front(new Knight(Coordinate(6, ligne_1)));
     pieces.push_front(new Bishop(Coordinate(2, ligne_1)));
     pieces.push_front(new Bishop(Coordinate(5, ligne_1)));
-    pieces.push_front(new Queen(Coordinate(/*3*/1, 4* (ligne_2 -  ligne_1)+ligne_1)));
+    pieces.push_front(new Queen(Coordinate(3,ligne_1)));
 
 
     for(int i = 0; i < 8; i++)
@@ -211,7 +211,7 @@ bool Player::isPlayerChessed(Board *board){
         cptY++;
     }
 
-    if( (cptX != 8 || cptY != 8))
+    if( (cptX != 7 && cptY != 7))
     {
         pieceTemp = board->getBoard()[cptY+1][cptX+1].getPiece();
 
@@ -233,7 +233,7 @@ bool Player::isPlayerChessed(Board *board){
         cptY--;
     }
 
-    if( (cptX != 0 || cptY != 0) )
+    if( (cptX != 0 && cptY != 0) )
     {
         pieceTemp = board->getBoard()[cptY-1][cptX-1].getPiece();
          if(pieceTemp != NULL && !this->isPieceOwner(pieceTemp) && (pieceTemp->toString() == "B" ||pieceTemp->toString() == "Q" ) )
@@ -257,7 +257,7 @@ bool Player::isPlayerChessed(Board *board){
 
 
 
-    if( (cptX != 8 || cptY != 0))
+    if( (cptX != 7 && cptY != 0))
     {
         pieceTemp = board->getBoard()[cptY-1][cptX+1].getPiece();
 
@@ -282,7 +282,7 @@ bool Player::isPlayerChessed(Board *board){
         cptX--;
         cptY++;
     }
-    if( (cptX != 0 || cptY != 8))
+    if( (cptX != 0 && cptY != 7))
     {
         pieceTemp = board->getBoard()[cptY+1][cptX-1].getPiece();
 

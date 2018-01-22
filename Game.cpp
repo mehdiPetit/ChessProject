@@ -4,13 +4,16 @@
 //  
 
 Game::Game () {
-    player_1 = new Player("white");
-    player_2 = new Player("black");
+    player_1.push_front(new Player("white"));
+    player_2.push_front(new Player("black"));
     board = new Board();
+
 }
 
 bool Game::play(){
 
+    char undo;
+    bool back_last_steep = false;
     int turn = 0;
     bool endOfGame = false;
     Coordinate initialCoordinate, finalCoordinate;
@@ -19,19 +22,19 @@ bool Game::play(){
     Case * caseDepart;
     Case * caseFinal;
     do{
-        board->refresh(player_1, player_2);
-        board->print(player_1, player_2);
+        board->refresh(player_1.front(), player_2.front());
+        board->print(player_1.front(), player_2.front());
         if(turn%2 == 0)
         {
             std::cout << "Player 1 : " << std::endl;
-            activePlayer = player_1;
-            passivePlayer = player_2;
+            activePlayer = player_1.front();
+            passivePlayer = player_2.front();
 
         }
         else {
             std::cout << "Player 2 : " << std::endl;
-            activePlayer = player_2;
-            passivePlayer = player_1;
+            activePlayer = player_2.front();
+            passivePlayer = player_1.front();
 
         }
 
@@ -89,11 +92,40 @@ bool Game::play(){
         }while(!isMoveAllowed);
 
         caseDepart->setPiece(NULL);
-        board->refresh(player_1, player_2);
-        board->print(player_1, player_2);
+
+        board->refresh(player_1.front(), player_2.front());
+        board->print(player_1.front(), player_2.front());
+
         if(passivePlayer->isPlayerChessed(board)){
             std::cout<<"CHESS !!!!!!";
         }
+        if(turn%2 == 0)
+        {
+            player_1.push_front(activePlayer);
+
+        }
+        else {
+            player_2.push_front(activePlayer);
+        }
+        do{
+            std::cout<<"Undo the last move ? (y/n)";
+            std::cin >> undo;
+            if(undo == 'y')
+            {
+                if(turn%2 == 0)
+                {
+                    player_1.remove(player_1.front());
+
+                }
+                else {
+                    player_2.remove(player_2.front());
+
+                }
+                board->refresh(player_1.front(), player_2.front());
+                board->print(player_1.front(), player_2.front());
+            }
+        }while(undo == 'y');
+
         turn++;
     }while(!endOfGame);
     return endOfGame;
